@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class user_login1 extends AppCompatActivity {
-   DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://console.firebase.google.com/u/0/project/mess-locator/database/mess-locator-default-rtdb/data/~2F ");
+   DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://mess-locator-default-rtdb.firebaseio.com/");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
