@@ -12,6 +12,18 @@
         android:theme="@style/Theme.Mess_Locator"
         tools:targetApi="31">
         <activity
+            android:name=".Owner_signup"
+            android:exported="false" />
+        <activity
+            android:name=".SignupStudent"
+            android:exported="false" />
+        <activity
+            android:name=".Signupowner"
+            android:exported="false" />
+        <activity
+            android:name=".activity_mybutton"
+            android:exported="false" />
+        <activity
             android:name=".User_signup"
             android:exported="true" />
         <activity
@@ -25,12 +37,13 @@
             android:exported="true" />
         <activity
             android:name=".User_selection"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
