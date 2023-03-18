@@ -12,14 +12,25 @@
         android:theme="@style/Theme.Mess_Locator"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".User_signup"
+            android:exported="true" />
+        <activity
+            android:name=".owner_login"
+            android:exported="true" />
+        <activity
+            android:name=".user_login1"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".User_selection"
+            android:exported="true"/>
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
