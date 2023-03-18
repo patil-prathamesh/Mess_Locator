@@ -13,8 +13,8 @@ public class User_selection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_selection);
-        Button ownerlogin = findViewById(R.id.btn1);
-        Button studentlogin = findViewById(R.id.btn2);
+        Button ownerlogin = findViewById(R.id.btn2);
+        Button studentlogin = findViewById(R.id.btn1);
         ownerlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
