@@ -12,14 +12,8 @@
         android:theme="@style/Theme.Mess_Locator"
         tools:targetApi="31">
         <activity
-            android:name=".UserHome"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".Owner_Home"
+            android:exported="true" />
         <activity
             android:name=".Owner_signup"
             android:exported="false" />
@@ -38,6 +32,7 @@
         <activity
             android:name=".owner_login"
             android:exported="true" />
+
         <activity
             android:name=".user_login1"
             android:exported="true" />
@@ -49,7 +44,13 @@
             android:exported="true" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

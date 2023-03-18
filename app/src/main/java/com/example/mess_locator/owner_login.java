@@ -52,7 +52,8 @@ public class owner_login extends AppCompatActivity {
                                 final String getPassword = snapshot.child(emailTxt).child("password").getValue(String.class);
                                 if(getPassword.equals(passTxt)){
                                     Toast.makeText(owner_login.this,"Sucessfully Logged in",Toast.LENGTH_SHORT).show();
-
+                                    Intent intent = new Intent(owner_login.this,Owner_Home.class);
+                                    startActivity(intent);
                                 }
                                 else{
                                     Toast.makeText(owner_login.this,"Incorrect  Email or Password!!!!!!!!!",Toast.LENGTH_SHORT).show();
