@@ -45,7 +45,7 @@ public class owner_login extends AppCompatActivity {
                     Toast.makeText(owner_login.this,"Please Enter Email or Password",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
+                    databaseReference.child("owner").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if(snapshot.hasChild(emailTxt)){
